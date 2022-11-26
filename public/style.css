@@ -76,6 +76,7 @@
 .messages{
     color: white;
     list-style: none;
+    width: 30px;
 }
 
 .main__message_container {
