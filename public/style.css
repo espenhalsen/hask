@@ -70,7 +70,7 @@
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
-    margin: 20px auto;
+
     
 }
 
@@ -83,6 +83,7 @@
 .main__message_container {
     padding: 22px 12px;
     display: flex;
+    word-wrap: break-word;
 }
 
 .main__message_container input {
