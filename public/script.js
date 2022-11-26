@@ -35,8 +35,11 @@ navigator.mediaDevices.getUserMedia({
       text.val('')
     }
   });
+  const uname= () => {
+    var uname=prompt('username');
+  }
   socket.on("createMessage", message, uname => {
-    $("ul").append(`<li class="message"><b>${uname}</b><br/>${message}</li>`);
+    $("ul").append(`<li class="message"><b>`uname`</b><br/>${message}</li>`);
     scrollToBottom()
   })
 })
@@ -146,8 +149,5 @@ const shareRoom = () => {
         navigator.clipboard.writeText(window.location.href);
         alert("Your room link has been copied to the clipboard!\n\nYour room link is:\n" + window.location.href + "\n\nPaste the link in a new browser, and enjoy! \n\nNOTE: If you use the 'Change Room' function, only include the ID in the link!");
 }
-const username= () => {
-  var username=prompt('Enter new Room-ID');
-  uname = username
-}
+
 
