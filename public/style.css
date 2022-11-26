@@ -70,13 +70,14 @@
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
-
+    margin: 20px auto;
+    word-wrap: break-word;
 }
 
 .messages{
     color: white;
     list-style: none;
-    width: 30px;
+    word-wrap: break-word;
 }
 
 .main__message_container {
