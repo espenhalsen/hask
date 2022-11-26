@@ -35,14 +35,15 @@ navigator.mediaDevices.getUserMedia({
       text.val('')
     }
   });
-  const uname= () => {
-    var uname=prompt('username');
-  }
+    const uname= () => {
+      var uname=prompt('username');
+    }
   socket.on("createMessage", message, uname => {
-    $("ul").append(`<li class="message"><b>`uname`</b><br/>${message}</li>`);
+    $("ul").append(`<li class="message"><b>${uname}</b><br/>${message}</li>`);
     scrollToBottom()
   })
 })
+
 
 socket.on('user-disconnected', userId => {
   if (peers[userId]) peers[userId].close()
