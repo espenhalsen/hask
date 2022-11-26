@@ -75,9 +75,30 @@
 }
 
 .messages{
-    color: white;
-    list-style: none;
-    word-wrap: break-word;
+    position: relative;
+    background: #8a8a8a;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    width: 222px;
+    height: 120px;
+    border-radius: 69px;
+    padding: 0px;
+}
+.messages:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #8a8a8a transparent;
+    border-width: 0px 0px 0;
+    bottom: -0px;
+    left: 50%;
+    margin-left: -0px;
 }
 
 .main__message_container {
