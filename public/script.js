@@ -36,8 +36,8 @@ navigator.mediaDevices.getUserMedia({
     }
   });
 
-  socket.on("createMessage", message => {
-    $("ul").append(`<li class="message"><b>Swagman</b><br/>${message}</li>`);
+  socket.on("createMessage", message, uname => {
+    $("ul").append(`<li class="message"><b>${uname}</b><br/>${message}</li>`);
     scrollToBottom()
   })
 })
