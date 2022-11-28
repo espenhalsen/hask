@@ -5,6 +5,10 @@ const myPeer = new Peer(undefined, {
   host: '/',
   port: '443'
 })
+var uname = "swagman"
+const username= () => {
+  var uname=prompt('username:');
+}
 let myVideoStream;
 const myVideo = document.createElement('video')
 myVideo.muted = true;
@@ -149,6 +153,4 @@ const shareRoom = () => {
         alert("Your room link has been copied to the clipboard!\n\nYour room link is:\n" + window.location.href + "\n\nPaste the link in a new browser, and enjoy! \n\nNOTE: If you use the 'Change Room' function, only include the ID in the link!");
 }
 
-const username= () => {
-  var uname=prompt('username:');
-}
+
