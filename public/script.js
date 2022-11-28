@@ -6,7 +6,7 @@ const myPeer = new Peer(undefined, {
   port: '443'
 })
 
-function username(){
+const username= () =>{
   let uname=prompt('username:');
   uname=prompt
 }
