@@ -6,9 +6,9 @@ const myPeer = new Peer(undefined, {
   port: '443'
 })
 
-const username= () =>{
-  let uname=prompt('username:');
-  uname=prompt
+const username = () =>{
+  var name=prompt('Set Username:');
+        if(name) var uname;
 }
 let myVideoStream;
 const myVideo = document.createElement('video')
