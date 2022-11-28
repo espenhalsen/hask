@@ -5,7 +5,7 @@ const myPeer = new Peer(undefined, {
   host: '/',
   port: '443'
 })
-var uname = "swagman"
+
 const username= () => {
   var uname=prompt('username:');
 }
