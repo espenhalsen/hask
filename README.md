@@ -29,7 +29,7 @@ Start the HASK server
 ```bash
   npm start
 ```
-
+Now you should be able to open the server in a browser using localhost/your ip and :3030 as the port.
 
 ## Development
 
