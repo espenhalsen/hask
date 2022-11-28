@@ -6,7 +6,7 @@ const myPeer = new Peer(undefined, {
   port: '443'
 })
 
-let uname = userId;
+let uname = prompt("Set your username:");
 let myVideoStream;
 const myVideo = document.createElement('video')
 myVideo.muted = true;
