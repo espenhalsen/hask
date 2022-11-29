@@ -1,6 +1,4 @@
-var express = require('express');
-var app = express();
-var xssFilters = require('xss-filters');
+import xssFilters from "./dist/xss-filters.js";
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
