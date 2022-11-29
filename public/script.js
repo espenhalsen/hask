@@ -1,3 +1,4 @@
+var xssFilters = require('xss-filters');
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
@@ -41,7 +42,7 @@ navigator.mediaDevices.getUserMedia({
   });
   
   socket.on("createMessage", message => {
-    $("ul").append(`<li class="message">${message}</li>`);
+    $("ul").append(`<li class="message">${xssFilters.inHTMLData(message)}</li>`);
     scrollToBottom()
   })
 })
