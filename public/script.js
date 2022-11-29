@@ -35,13 +35,13 @@ navigator.mediaDevices.getUserMedia({
   // when press enter send message
   $('html').keydown(function (e) {
     if (e.which == 13 && text.val().length !== 0) {
-      socket.emit('message', text.val());
+      socket.emit('message', uname+"<br/>"+text.val());
       text.val('')
     }
   });
   
   socket.on("createMessage", message => {
-    $("ul").append(`<li class="message"><b>${uname}</b><br/>${message}</li>`);
+    $("ul").append(`<li class="message">${message}</li>`);
     scrollToBottom()
   })
 })
