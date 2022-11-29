@@ -1,3 +1,5 @@
+var express = require('express');
+var app = express();
 var xssFilters = require('xss-filters');
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
