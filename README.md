@@ -3,6 +3,9 @@
 
 HASK uses JS and EJS to create a peer-to-peer connection. Web-camera is required. 
 
+Wanna test it out? You can do so here:
+[https://hask.halsendata.com](https://hask.halsendata.com)
+
 
 ## Run Locally on your machine:
 
